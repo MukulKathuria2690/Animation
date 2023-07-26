@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url(./Images/Mahal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*--Nav Section--*/
+
+.navbar {
+  background-image: radial-gradient(grey, rgba(0, 0, 0, 0.322));
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 100px;
+}
+
+.navbar ul {
+  display: inline-flex;
+  gap: 20px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navbar ul li:hover {
+  color: aquamarine;
+}
+
+.navbar ul li:first-child {
+  color: #00b894;
+}
+/*--Main Section--*/
+
+.main_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75%;
+  color: white;
+}
+
+.content h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+.content h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+.content a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+.content .btnone {
+  background: #fff;
+  color: #000;
+}
+.btnone:hover {
+  background: #00b894;
+  color: white;
+}
+
+.content .btntwo {
+  background: #00b894;
+  color: white;
+}
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Darjeeling";
+  }
+  20% {
+    content: "Agra";
+  }
+  35% {
+    content: "Jaipur";
+  }
+  60% {
+    content: "kerala";
+  }
+  80% {
+    content: "delhi";
+  }
+  100% {
+    content: "Mumbai";
+  }
+}
